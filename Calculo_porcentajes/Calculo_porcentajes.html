@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<TITLE>CALCULO_PORCENTAJES</TITLE>
+	</HEAD>
+	<BODY onload="calculo_porcentajes();">
+		<SCRIPT type="text/javascript">
+			//Este codigo ha sido generado por el modulo psexport 20180802-w32 de PSeInt.
+			//Es posible que el codigo generado no sea completamente correcto. Si encuentra
+			//errores por favor reportelos en el foro (http://pseint.sourceforge.net).
+
+			function calculo_porcentajes() {
+				var cant_enfermos = new Number();
+				var cant_habitantes = new Number();
+				var porcentaje = new Number();
+				document.write("Ingrese el total de habitantes del país",'<BR/>');
+				cant_habitantes = Number(prompt());
+				document.write("Ingrese el total de enfermos del país",'<BR/>');
+				cant_enfermos = Number(prompt());
+				porcentaje = (cant_enfermos/cant_habitantes)*100;
+				document.write("El porcentaje de enfermo en el país es de: ",porcentaje,"%",'<BR/>');
+			}
+			
+		</SCRIPT>
+	</BODY>
+</HTML>
