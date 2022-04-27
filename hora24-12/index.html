@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- acá decimos que es un documento HTML5 -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversión HORAS 14 a 12</title>
+  </head>
+  <body>
+    <section>
+      <h1>Caso practico 01: Convertir Horas</h1>
+      <p>
+        Escribir un programa que lea la hora de un día de notación de 24 horas y
+        genera una salida como respuesta en formato 12 horas.<br />
+        • Por ejemplo, si la entrada es 13:45, la salida será: 1:45 PM<br />
+        • El programa pedirá al usuario que introduzca horas y minutos por
+        separado
+      </p>
+
+      <form>
+        <!--formulario para tomar y mostrar datos:-->
+        <div>
+          <label>Ingrese Horas (en formato 24):</label>
+          <input type="number" id="hora" />
+        </div>
+        <div>
+          <label>Ingrese Minutos:</label>
+          <input type="number" id="minutos" />
+        </div>
+        <button type="button" onclick="procesar();">Convertir</button>
+
+        <div>
+          <label>Hora en formato 12:</label>
+          <input type="text" id="hora12" readonly disabled />
+        </div>
+      </form>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
