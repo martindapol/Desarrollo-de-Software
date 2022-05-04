@@ -10,7 +10,7 @@ function procesar(){ //este es mi programa principal
     let valorHr12 = 0
     let amPm = 'AM'
 
-
+    //validaciones extra para valores fuera de rango:
     if(valorHr<0 || valorHr>23){
         alert('Valor de horas incorrecto!')
         return
@@ -21,11 +21,9 @@ function procesar(){ //este es mi programa principal
         return
     }
 
-
-
     //Procesar las entradas:
     if(valorHr == 0){
-        //0
+        //0:
         valorHr12 = valorHr + 12
     }else{
         //1 a 12:
