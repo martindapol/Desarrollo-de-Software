@@ -43,6 +43,13 @@ function procesar(){
     //RESULTADOS:
     console.log('Cantidad de pares: ' + contPares)
     console.log('Cantidad de impares: ' + contImpares)
-    console.log('Paso al menos una vez el 00 ?: ' + aviso0 ? 'SI': 'NO')
-    console.log('Hubo alternancia PAR/IMPAR ?: ' + aviso0 ? 'SI': 'NO')
+    if(aviso0 == true)
+        console.log('Pasó al menos una vez el 00')
+    else    
+        console.log('NO pasó al menos una vez el 00')
+
+   // if(avidoSecuenciaAlterados == true)
+   //     console.log('Paso alternancia PAR/IMPAR')
+   
+   console.log('Hubo alternancia PAR/IMPAR ?: ' + ((avidoSecuenciaAlterados===true) ? 'SI': 'NO'))
 }
