@@ -12,6 +12,7 @@ function procesar() {
   for (let i = 0; i < cantidad; i++) {
     //temp varía entre [0, 49]
     let temp = Math.floor(Math.random() * 50); //es un valor que esta en el intervalo [0;1)
+    console.log(temp)
     //procesar las temperaturas:
     acumulador += temp;
     if (i == 0) {
@@ -22,7 +23,7 @@ function procesar() {
       if (temp < t_min) t_min = temp;
     }
   } //fin del for:
-
+  console.log('\nRESULTADOS')
   let amplitud = t_max - t_min;
   let promedio = acumulador / cantidad;
   //MOSTRAR RESULTADOS:
