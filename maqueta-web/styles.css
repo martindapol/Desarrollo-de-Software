@@ -1,0 +1,27 @@
+body{ /*Selector de elemento*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1em; /*1em = 16px | 1.3rem=16px*/ 
+    line-height: 1.6em;
+}
+
+p{
+    text-align: justify;
+}
+
+.container{ /*Selector de clase*/
+    width: 85%;
+    max-width: 850 px;
+    margin: 0 auto;
+}
+
+.header{
+    background: #333;
+    color:white;
+    width: 100%;
+}
+
+.footer{
+    background: rgb(154, 134, 245);
+    color:white;
+    width: 100%;
+}
