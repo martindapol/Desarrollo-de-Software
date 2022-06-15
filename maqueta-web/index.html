@@ -14,26 +14,17 @@
       href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Open+Sans&family=Roboto:ital,wght@0,100;0,700;1,100&display=swap"
       rel="stylesheet"
     />
+    <script src="js/include-html.min.js"></script>
   </head>
   <!--Fin cabecera-->
   <body>
     <!--Cuerpo-->
     <header class="header">
-      <div class="container diplay-menu ">
-        <a href="#" class="logo">LoGo</a>
-
-        <nav class="menu">
-          <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Servicios</a></li>
-          </ul>
-        </nav>
-      </div>
+      <div data-include="encabezado.html"></div>
     </header>
     <main>
       <div class="container">
-        <h1 style="margin-top: 4em;">Sección principal</h1>
+        <h1>Sección principal</h1>
         <p id="parrafo_principal">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, id
           praesentium velit deleniti accusamus illo nam perspiciatis voluptas
@@ -105,18 +96,25 @@
           laborum tempore. Dolorum architecto repellendus ad nesciunt alias
           corporis.
         </p>
-        <p>
-          Eveniet maxime voluptates ex odit ab fugit alias soluta aperiam
-          debitis dolorem veniam suscipit ad, illo ut in nemo provident officiis
-          laborum tempore. Dolorum architecto repellendus ad nesciunt alias
-          corporis.
-        </p>
+
+        <section id="servicios-seccion">
+          <h4>Servicios</h4>
+          <p>
+            Eveniet maxime voluptates ex odit ab fugit alias soluta aperiam
+            debitis dolorem veniam suscipit ad, illo ut in nemo provident
+            officiis laborum tempore. Dolorum architecto repellendus ad nesciunt
+            alias corporis.
+          </p>
+          <img
+            src="images/ideas.png"
+            alt="ideas al pie"
+            class="img-servicios"
+          />
+        </section>
       </div>
     </main>
     <footer class="footer">
-      <div class="container">
-        <p>Diseñado por @martindapol</p>
-      </div>
+      <div data-include="pie-de-pagina.html"></div>
     </footer>
   </body>
   <!--Fin del cuerpo-->
