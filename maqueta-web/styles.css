@@ -1,27 +1,74 @@
-body{ /*Selector de elemento*/
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.1em; /*1em = 16px | 1.3rem=16px*/ 
-    line-height: 1.6em;
+body {
+  /*Selector de elemento*/
+  font-family: "Cedarville Cursive", cursive;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em; /*1em = 16px | 1.3rem=16px*/
+  line-height: 1.6em;
 }
 
-p{
-    text-align: justify;
+p {
+  text-align: justify;
 }
 
-.container{ /*Selector de clase*/
-    width: 85%;
-    max-width: 850 px;
-    margin: 0 auto;
+.container {
+  /*Selector de clase*/
+  width: 85%;
+  max-width: 850 px;
+  margin: 0 auto;
 }
 
-.header{
-    background: #333;
-    color:white;
-    width: 100%;
+.header {
+  background: #333;
+  color: white;
+  width: 100%;
+  padding: 1.2rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
-.footer{
-    background: rgb(154, 134, 245);
-    color:white;
-    width: 100%;
+.header a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu ul{
+    list-style: none;
+}
+.menu ul li{
+   display: inline-block;
+}
+
+.menu ul li a{
+    padding: 0.5em 0.5em;
+    border-radius: 5px;
+ }
+ 
+ .menu ul li a:hover{
+    background: rgb(133, 133, 133);
+}
+
+
+
+
+.diplay-menu{
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.footer {
+  background: rgb(154, 134, 245);
+  color: white;
+  width: 100%;
+}
+
+#parrafo_principal {
+  color:  rgb(100, 59, 247);
+  
+ /* border: 1px dotted #000;
+  padding-top: 1em;
+  margin: 4em 4em;*/
 }
