@@ -1,0 +1,26 @@
+[
+    {
+      "nombre": "MUZZA",
+      "comun": 700,
+      "mitadGigante": 800,
+      "gigante": 1400
+    },
+    {
+      "nombre": "PROVENZAL",
+      "comun": 750,
+      "mitadGigante": 820,
+      "gigante": 1450
+    },
+    {
+      "nombre": "FUGAZZA",
+      "comun": 750,
+      "mitadGigante": 850,
+      "gigante": 1600
+    },
+    {
+      "nombre": "JAMON",
+      "comun": 750,
+      "mitadGigante": 850,
+      "gigante": 1600
+    }
+  ]
