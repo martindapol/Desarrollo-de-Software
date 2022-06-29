@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizzería</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body onload="cargar_variedades();">
+    <header class="center">
+      <h1>Pizzotas</h1>
+    </header>
+    <main class="center">
+      <div class="tarjeta">
+        <div class="cabecera">
+          <h4>Pizzas Enteras</h4>
+        </div>
+        <div class="contenido">
+          <div >
+            <label for="tipo8p"
+              >8 porciones:
+              <input
+                type="radio"
+                value="comun"
+                id="tipo8p"
+                name="opTipo"
+                checked
+              />
+            </label>
+            <label for="opG"
+              >Gigante:
+              <input type="radio" value="gigante" name="opTipo" id="opG" />
+            </label>
+          </div>
+
+          <label for="variedades_enteras">Pizza:</label>
+          <select id="variedades_enteras"> 
+          </select>
+
+          <button type="button" class="btn btn-primary btn-calcular" onclick="obtener_precio_enteras()">
+            Calcular
+          </button>
+          <div id="precioEntera" class="precio"></div>
+        </div>
+      </div>
+      <div class="tarjeta">
+        <div class="cabecera">
+          <h4>Medias Gigantes</h4>
+        </div>
+        <div class="contenido">
+          <label for="variedades_mediasSolas">Pizza:</label>
+          <select id="variedades_mediasSolas"> 
+          </select>
+          <button type="button" class="btn btn-primary btn-calcular" onclick="obtener_precio_soloMitad()">
+            Calcular
+          </button>
+          <div id="precioSoloMedia" class="precio"></div>
+        </div>
+      </div>
+      <div class="tarjeta">
+        <div class="cabecera">
+          <h4>Medias pizzas</h4>
+        </div>
+        <div class="contenido">
+            <div >
+              <label for="tipo8p"
+                >8 porciones:
+                  <input
+                  type="radio"
+                  value="comun"
+                  id="tipo8por"                
+                  name="opcionTipo"
+                  checked
+              />
+              </label>
+              <label for="opG"
+                >Gigante:
+                <input type="radio" value="gigante" name="opcionTipo" id="opGig" />
+              </label>
+            </div>
+          <label for="variedades_medias1">Pizza 1/2: </label>
+          <select id="variedades_medias1" ></select>
+
+          <label for="variedades_medias2">Pizza 1/2:</label>
+          <select id="variedades_medias2">
+          </select>
+
+          <button type="button" class="btn btn-primary btn-calcular" onclick="obtener_precio_medias()">
+            Calcular
+          </button>
+          <div id="precioMitad" class="precio"></div>
+        </div>
+      </div>
+      <div class="tarjeta">
+        <div class="cabecera">
+          <h4>4 estaciones</h4>
+        </div>
+        <div class="contenido">
+          <label for="variedades_4e1">Pizza 1/4:</label>
+          <select id="variedades_4e1"></select>
+
+          <label for="variedades_4e2">Pizza 1/4:</label>
+          <select id="variedades_4e2">
+          </select>
+          <label for="variedades_4e3">Pizza 1/4:</label>
+          <select id="variedades_4e3"></select>
+
+          <label for="variedades_4e4">Pizza 1/4:</label>
+          <select id="variedades_4e4">
+          </select>
+
+          <button type="button" class="btn btn-primary btn-calcular" onclick="obtener_precio_estaciones()">
+            Calcular
+          </button>
+          <div id="precio4e" class="precio"></div>
+        </div>
+      </div>
+    </main>
+    <script src="index.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+h4{
+    font-size: 1.1em !important;
+}
+.tarjeta{
+    border: solid 1px rgb(151, 150, 150);
+    border-radius: 5px;
+    padding: 1em 1em;
+    position: relative;
+    margin:1em 0
+}
+
+.cabecera{
+    background:rgb(149, 149, 153) ;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 .5em;
+}
+
+.contenido{
+    padding-top: 2em;
+    display: grid;
+}
+
+.center{
+    margin: 0 auto;
+    width: 550px;   
+}
+
+.btn-calcular{
+    margin-top: 0.5em;
+    width: 20%;
+}
+
+.precio{
+ position: absolute;
+ right: 0;
+ bottom: 0;
+ width: 8em;
+ height: 2em;
+ background: rgb(106, 106, 107);  
+ border-radius: 5px; 
+ color:white;
+ margin: 0.5em 0.7em;
+ text-align: center;
+ font-weight: bold;
+}
